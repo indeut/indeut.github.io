@@ -2041,7 +2041,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 1.5 !important;
 }
 
 .footer {
@@ -2308,7 +2308,7 @@ select.mobile-device {
     color: #f7931e;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2317,7 +2317,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 700;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
@@ -3320,11 +3320,38 @@ select.mobile-device {
 	color: #393939;
 }
 
+
 .address-item h3{
 	font-size: 28px;
 	font-weight: 600;
 	color: #f7931e;
 }
+
+.address-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.address-item {
+  flex: 1 1 30%;
+  min-width: 250px;
+  max-width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Optional: stack vertically on very small screens */
+@media (max-width: 767px) {
+  .address-item {
+    flex: 1 1 100%;
+  }
+}
+
 
 
 .dmtop.show {
